@@ -1,0 +1,77 @@
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\Hospitology.dll.config
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\Hospitology.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\Hospitology.pdb
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\Newtonsoft.Json.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Net.Http.Formatting.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Helpers.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Http.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Http.WebHost.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Mvc.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Razor.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.Razor.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\Newtonsoft.Json.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Net.Http.Formatting.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Helpers.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Http.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Http.WebHost.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Mvc.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Razor.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.Razor.xml
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\obj\Debug\Hospitology.dll
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\obj\Debug\Hospitology.pdb
+C:\Users\Valeri\documents\visual studio 2013\Projects\Hospitology\Hospitology\obj\Debug\Hospitology.csprojResolveAssemblyReference.cache
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\Hospitology.dll.config
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\Hospitology.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\Hospitology.pdb
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\Newtonsoft.Json.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Helpers.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Mvc.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Razor.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.Deployment.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.Razor.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\Newtonsoft.Json.xml
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Helpers.xml
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Mvc.xml
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.Razor.xml
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.xml
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.Deployment.xml
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\bin\System.Web.WebPages.Razor.xml
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\obj\Debug\Hospitology.dll
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\obj\Debug\Hospitology.pdb
+C:\Users\valer\Documents\Visual Studio 2013\Projects\Hospitology\Hospitology\obj\Debug\Hospitology.csprojResolveAssemblyReference.cache
+G:\Hospitology\Hospitology\bin\Hospitology.dll.config
+G:\Hospitology\Hospitology\bin\Hospitology.dll
+G:\Hospitology\Hospitology\bin\Hospitology.pdb
+G:\Hospitology\Hospitology\bin\Microsoft.Web.Infrastructure.dll
+G:\Hospitology\Hospitology\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\Hospitology\Hospitology\bin\Newtonsoft.Json.dll
+G:\Hospitology\Hospitology\bin\System.Net.Http.Formatting.dll
+G:\Hospitology\Hospitology\bin\System.Web.Helpers.dll
+G:\Hospitology\Hospitology\bin\System.Web.Http.dll
+G:\Hospitology\Hospitology\bin\System.Web.Http.WebHost.dll
+G:\Hospitology\Hospitology\bin\System.Web.Mvc.dll
+G:\Hospitology\Hospitology\bin\System.Web.Razor.dll
+G:\Hospitology\Hospitology\bin\System.Web.WebPages.Deployment.dll
+G:\Hospitology\Hospitology\bin\System.Web.WebPages.dll
+G:\Hospitology\Hospitology\bin\System.Web.WebPages.Razor.dll
+G:\Hospitology\Hospitology\bin\Newtonsoft.Json.xml
+G:\Hospitology\Hospitology\bin\System.Net.Http.Formatting.xml
+G:\Hospitology\Hospitology\bin\System.Web.Helpers.xml
+G:\Hospitology\Hospitology\bin\System.Web.Http.xml
+G:\Hospitology\Hospitology\bin\System.Web.Http.WebHost.xml
+G:\Hospitology\Hospitology\bin\System.Web.Mvc.xml
+G:\Hospitology\Hospitology\bin\System.Web.Razor.xml
+G:\Hospitology\Hospitology\bin\System.Web.WebPages.xml
+G:\Hospitology\Hospitology\bin\System.Web.WebPages.Deployment.xml
+G:\Hospitology\Hospitology\bin\System.Web.WebPages.Razor.xml
+G:\Hospitology\Hospitology\obj\Debug\Hospitology.dll
+G:\Hospitology\Hospitology\obj\Debug\Hospitology.pdb

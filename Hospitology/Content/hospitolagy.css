@@ -1,0 +1,39 @@
+﻿body {
+    background-image: url("../../Images/h-back.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+textarea
+{
+    resize:none;
+}
+.btn:first-of-type {
+    position: relative;
+    text-align: center;
+}
+.index {
+    margin: 1.5%;
+    margin-left:2%;
+    width: 45%;
+    height: 110px;
+}
+.row
+{
+    margin-top:13%;
+}
+.datepicker
+{
+    background:white;
+}
+
+.red{
+ 
+    color:red;
+}
+
+.hidder
+{
+    font-size:0px;
+}

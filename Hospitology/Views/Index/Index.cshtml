@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospitolagy</title>
+    <meta charset="windows-1251" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+
+    <link rel="stylesheet" href="~/Content/hospitolagy.css" media="screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--OnLoad Begin Login modal-->
+        <div class="modal fade" id="modal-account">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Вход</h2>
+                    </div>
+                    <div class="modal-body">
+
+                        <form method="post">
+                            <label for="Username">Потребителско име : </label><br />
+                            <input type="text" name="logUser" value="" /><br />
+
+                            <label for="Password">Парола : </label><br />
+                            <input type="password" name="logPass" value="" /><br />
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-6"><input type="button" class="btn btn-lg" id="LoginButton" value="Влез" /></div>
+                                <div class="col-xs-6">
+                                   <!---<button type="button" style="position:relative" class="btn btn-lg" data-toggle="modal" data-target="#modal-signIn" value="Sign in">Sign in</button>-->
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--OnLoad END Login modal-->
+        <!--My Account Login END-->
+
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <button id="appId" type="button" class="btn index btn-default btn-lg active" data-toggle="modal" data-target="#m_make_appointment">
+                    <span class="glyphicon glyphicon-pencil"> </span> Прегледи
+                </button>
+
+                <button id="accId" type="button" data-userid="" data-adminid="" data-doctorid="" class="btn index btn-default btn-lg active" data-toggle="modal" data-target="#modal_account">
+                    <span class="glyphicon glyphicon-user"> </span><span class="username"></span>
+                </button>
+
+
+                <!--My Account Login END-->
+                <!--Begin Wrong date error-->
+                <div class="modal fade" id="modal-data-error">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div id="error-result"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Wrong date error End-->
+
+                <!--Begin Cant make appointment-->
+                <div class="modal fade error-up" id="modal-appointment-exist">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <p class="red">Вече си запазил час за тази дата или личният ти лекар е в почивка.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Wrong date error End-->
+
+                <!--Appointment Patient Start-->
+                <div class="modal fade" id="modal-appointment-picker">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <form>
+                                            <div class="col-sm-4 text-left">
+                                                <!--Pictures-->
+                                                <label for="date"><span class="glyphicon glyphicon-calendar">  </span>Дата на преглед</label>
+                                                <input type="text" id="appointmentDate" class="datepicker text-center form-control" />
+                                                <input type="button" class="btn" value="Search" id="appointmentSearch">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div id="appointment-result">
+                                    <div class='table-responsive'>
+                                        <table id="x" class='table'>
+                                            <tr><td><strong>Час за преглед</strong></td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Semi EndAppointment Patient Start-->
+                <!--Wrong date error-->
+                <div class="modal fade" id="modal-date-error">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div id="error-result"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Wrong date error End-->
+                <!--Appointment a car Total End-->
+
+                <!--Appointment Record Success-->
+                <div class="modal fade" id="modal-appointment-success">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <h2 class="text-center"><strong>Вие запазихте този час за преглед.</strong></h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Appointment Record Success End-->
+
+                <!--Appointment Record Unsuccess-->
+                <div class="modal fade" id="modal-appointment-unsuccess">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <h2 class="red text-center"><strong>Възникна грешка при обработка на данните, моля опитайте отново.</strong></h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Appointment Record Unsuccess End-->
+
+
+                <!--Appointment Record Success Explicit-->
+                <div class="modal fade container-fluid" id="modal-description">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <h3>В кои области на тялото изпитвате болка</h3>
+                                    <div>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Head" value="Глава">Глава
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Rear" value="Тил"> Тил
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Waist" value="Кръст">Кръст
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Eyes" value="Очи">Очи
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Ears" value="Уши">Уши
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Shoulder" value="Рамо">Рамо
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Hands" value="hands">Ръце
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Chest" value="chest">Гръден кош
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Heart" value="heart">Сърце
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Lung" value="lung">Бял дроб
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Liver" value="liver">Черен дроб
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="Kidneys" value="kidneys">Бъбреци
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="MedCheck" value="medical_check"><strong>Профилактичен преглед</strong>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="Description">Моля, добавете описание ако желаете.</label>
+                                        <textarea id="PatientDescription" rows="8" cols="40"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <!--<div class="row">-->
+                                    <div class="col-md-2 col-md-offset-5">
+                                        <input type="button" id="AppTrue" class="btn btn-success btn-lg" value="Engage" />
+                                        <input type="button" id="AppFalse" class="btn btn btn-warning btn-lg" value="Cancel" />
+                                    </div>
+                                    <!-- </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Book Record Success Explicit End-->
+                <!---Start Modal Appointment Question Is this my date-->
+                <div class="modal fade" id="modal-appointment-question">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="app_question"></div>
+                                    <div>
+                                        <input type="button" id="succesAppointment" class="btn btn-success btn-lg" value="Engage" />
+                                        <input type="button" id="falseAppointment" class="btn btn btn-warning btn-lg" value="Cancel" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!---END Modal Appointment Question Is this my date-->
+
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-12"></div>
+
+
+            <!--Login Success-->
+            <div class="modal fade" id="modal-login-success">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="container-fluid">
+                                <!--THIS ROW SHOW CHANGE IT CONTENT DINAMICLY FOR EVERY DIFFERET TYPE USER Patient/Docotr/Admin SHould provide differen info-->
+                                <div class="row">
+
+
+                                    <div class="col-sm-4 text-center"><strong class="btn btn-link" id="login-My-Acc"></strong></div>
+                                    <div class="col-sm-4 text-center"><strong class="btn btn-link" id="login-My-Medical-Card"></strong></div>
+                                    <div class="col-sm-4 text-center"><strong class="btn btn-link" id="login-x"></strong></div>
+                                    <div class="col-sm-4 text-center"><strong class="btn btn-link" id="login-y"></strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <div id="profile_result"></div>
+                                <div id="profile_Medical_Cards"></div>
+                                <div id="profile_x"></div>
+                                <div id="profile_y"></div>
+                             </div>
+                            
+                                <!--Must add profile current summary and with option delete the next appointment from DB-->
+                            
+                        <div class="modal-footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-4"><button id="mainMenu" class="btn btn-default btn-sm" value="Close">Излез</button></div>
+                                    <div class="col-xs-4"><button id="signOut" class="btn btn-default btn-sm" value="Sign out">Отпиши се</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Login Success End-->
+
+                <!--Empty modal to show Description-->
+                <div class="modal fade" id="modal-history-description">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h3>Описание</h3>    
+                            </div>
+                            <div class="modal-body">
+                                <div name="bodyDescription" class="container-fluid"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-4"><button id="mainMenu" class="btn btn-default btn-sm" value="Close">Close</button></div>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Appointment Record Success End-->
+
+
+        </div>
+</div>
+    </div>
+    <script src="~/Scripts/JavaScript/moment.js" type="text/javascript"></script>
+    <script src="~/Scripts/JavaScript/PatientProfile.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/JavaScript/functions.js" type="text/javascript"></script>
+
+
+</body>
+</html>
